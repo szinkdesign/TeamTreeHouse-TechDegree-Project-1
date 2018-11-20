@@ -15,16 +15,19 @@ body {
 
 a {
   text-decoration: none;
-  color: #999;
+  color: white;
+  background-color: inherit;
 }
 a:hover {
-  color: #6633ff;
+  color: #ff99ff;
+  background-color: inherit;
 }
 
 /* Section Styles */
 
 .main-nav {
   width: 100%;
+  color: inherit;
   background: black;
   min-height: 30px;
   padding: 10px;
@@ -44,6 +47,7 @@ a:hover {
     display: block;
     margin-right: auto;
     color: white;
+    background-color: inherit;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,7 +56,8 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #ff99ff;
+  background-color: inherit;
 }
 
 header {
@@ -62,6 +67,15 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+
+#experience-bg {
+  text-align: center;
+  background: url('images/service-autopilot-office.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
@@ -69,8 +83,9 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 10%;
+  border: 3px solid gray;
+  box-shadow: 0px 0px 3px black;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -93,6 +108,7 @@ header .profile-image:hover {
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
+  color: inherit;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
@@ -101,7 +117,20 @@ header .profile-image:hover {
 .card:hover {
   border-color: #ff99ff;
 }
-
+.resume-card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 850px;
+  text-align: left;
+  color: inherit;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+.resume-card:hover {
+  border-color: #ff99ff;
+}
 ul.skills {
   padding: 0;
   text-align: center;
@@ -118,6 +147,7 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+  color: inherit;
 }
 
 footer {
@@ -171,10 +201,8 @@ a.social:hover {
 @media screen and (min-width: 720px) {
 
   .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
       display: flex;
       max-width: 1200px;
-      -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
   }
@@ -185,7 +213,7 @@ a.social:hover {
 
   .nav {
     max-width: 1200px;
-    padding: 0 30px;
+    padding: 0px 30px;
   }
 
 
